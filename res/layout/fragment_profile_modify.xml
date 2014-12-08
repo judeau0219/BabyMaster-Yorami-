@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_bg_color">
+    
+    <LinearLayout 
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="한글이름"
+	        style="@style/txt_input_title"/>
+	    <EditText android:id="@id/edit_name_kor"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="6dip"
+	        android:imeOptions="actionNext"
+	        style="@style/edit_kor"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dip"
+	        android:text="영문이름"
+	        style="@style/txt_input_title"/>
+	    <EditText android:id="@id/edit_name_eng"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="6dip"
+	        android:imeOptions="actionDone"
+	        style="@style/edit_eng"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dip"
+	        android:text="생년월일"
+	        style="@style/txt_input_title"/>
+	    <Button 
+	        android:id="@id/btn_select_birthday"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="6dip"
+		    style="@style/btn_datetime"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dip"
+	        android:text="성별"
+	        style="@style/txt_input_title"/>
+	    <RadioGroup android:id="@id/radiogroup_sex"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dip"
+	        android:orientation="horizontal"
+	        android:checkedButton="@id/radio_male" >
+	        <RadioButton
+	            android:id="@id/radio_male"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="8"
+	            android:text="남자"
+	            style="@style/radio_sex"/>
+	        <Space 
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"/>
+	        <RadioButton
+	            android:id="@id/radio_female"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="8"
+	            android:text="여자 "
+	            style="@style/radio_sex"/>
+	    </RadioGroup>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dip"
+	        android:text="키/몸무게(cm/kg)"
+	        style="@style/txt_input_title"/>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dip">
+		    <EditText android:id="@id/edit_height" 
+		        android:layout_width="0dip"
+		        android:layout_height="45dip"
+		        android:layout_weight="8"
+		        android:imeOptions="actionNext"
+		        style="@style/edit_number"/>
+		    <Space 
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"/>
+		    <EditText android:id="@id/edit_weight" 
+		        android:layout_width="0dip"
+		        android:layout_height="45dip"
+		        android:layout_weight="8"
+		        android:imeOptions="actionDone"
+		        style="@style/edit_number"/>
+	    </LinearLayout>
+	    <Button android:id="@id/btn_modify_comp"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="16dip"
+	        android:onClick="onClick"
+	        android:text="수정완료"
+	        style="@style/btn_input_complete"/>
+    </LinearLayout>
+
+</LinearLayout>

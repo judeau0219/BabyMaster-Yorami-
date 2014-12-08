@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <com.ndl.android.babymaster.viewgroup.PhotoContainer 
+            android:id="@id/photo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+	    <TextView android:id="@id/txt_name_kor"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dip"
+	        style="@style/txt_profile_name_kor"/>
+	    <TextView android:id="@id/txt_name_eng"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         style="@style/txt_profile_name_eng"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/ic_months"/>
+	        <TextView android:id="@id/txt_months"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	           style="@style/txt_detail_info"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:src="@drawable/ic_height"/>
+	        <TextView android:id="@id/txt_height"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            style="@style/txt_detail_info"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:src="@drawable/ic_weight"/>
+	        <TextView android:id="@id/txt_weight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            style="@style/txt_detail_info"/>
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/quick_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <LinearLayout android:id="@id/btn_stats"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:background="@drawable/btn_start_bg">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_first_stats"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="통계"
+                style="@style/txt_basic"/>
+        </LinearLayout>
+        <LinearLayout android:id="@id/btn_recorder"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:background="@drawable/btn_start_bg2">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_first_recorder"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:text="녹음하기"
+	            style="@style/txt_basic"/>
+        </LinearLayout>
+        <LinearLayout android:id="@id/btn_log"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:background="@drawable/btn_start_bg">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_first_log"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:text="베이비로그"
+	            style="@style/txt_basic"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <FrameLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#f8f7f7">
+         <com.ndl.android.babymaster.viewgroup.PagerContainer 
+             android:id="@id/pager_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"/>
+        <ImageView android:id="@id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dip"
+            android:onClick="onClick"
+            android:src="@drawable/btn_baby_add"/>
+    </FrameLayout>
+    
+    
+    
+    
+</LinearLayout>

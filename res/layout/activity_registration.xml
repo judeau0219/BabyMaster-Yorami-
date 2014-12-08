@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 
+	<fragment 
+        android:name="com.ndl.android.babymaster.fragments.registration.StepFragment01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+	 -->
+</FrameLayout>

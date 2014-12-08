@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_bg_color">
+    
+    <LinearLayout android:id="@+id/linear"
+		android:layout_width="240dip"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		
+	    <TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="일자/시간"
+			style="@style/txt_input_title"/>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:layout_marginTop="10dip"
+	        android:gravity="center"
+	        android:background="#FFF">
+	        <TextView android:id="@+id/txt_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/btn_txt_date"
+				style="@style/txt_basic"/>
+	        <TextView android:id="@+id/txt_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip"
+				android:background="@drawable/btn_txt_time"
+				style="@style/txt_basic"/>
+		</LinearLayout>
+		
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dip"
+			android:text="분류"
+			style="@style/txt_input_title"/>
+	    <Button android:id="@+id/btn_type"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dip"
+	        android:layout_marginTop="10dip"
+	        style="@style/spinner_type_bg"/>
+	     
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView android:id="@+id/txt_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/input_title_diaper"
+				style="@style/txt_input_title"/>
+            <FrameLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip">
+			    <Button android:id="@+id/btn_elapsed"
+			        android:layout_width="match_parent"
+			        android:layout_height="50dip"
+			        style="@style/btn_datetime"
+			        android:text="@string/guide_btn_elapsed"
+			        android:visibility="gone"/>
+			    <EditText android:id="@+id/edit_num" 
+			        android:layout_width="match_parent"
+			        android:layout_height="50dip"
+			        android:imeOptions="actionDone"
+			        style="@style/edit_number"
+			        android:visibility="gone"/>
+			    <EditText android:id="@+id/edit_text"
+			        android:layout_width="match_parent"
+			        android:layout_height="50dip"
+			        android:imeOptions="actionDone"
+			        style="@style/edit_kor"/>
+		    </FrameLayout>
+        </LinearLayout>
+        
+		<Button android:id="@+id/btn_add_record"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:layout_marginTop="30dip"
+	        android:text="등록하기"
+	        style="@style/btn_input_complete"/>
+		
+    </LinearLayout>
+    
+</LinearLayout>

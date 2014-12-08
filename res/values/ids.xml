@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 메인 -->
+    <item type="id" name="main_contents"/>
+    <item type="id" name="main_frame"/>
+    <item type="id" name="side_drawer"/>
+    <item type="id" name="main_title"/>
+    <item type="id" name="linear_result"/>
+    <item type="id" name="radio_result"/>
+    <item type="id" name="btn_confirm"/>
+    <item type="id" name="btn_cancel"/>
+    <item type="id" name="record_result"/>
+    
+    <!-- 상단토글 이미지 -->
+    <item type="id" name="img_toggle"/>
+    <item type="id" name="img_profile"/>
+    <item type="id" name="img_profile_thumb"/>
+    
+    <!-- 메뉴 -->
+    <item type="id" name="btn_toggle"/>
+    
+    <!-- 로그화면 상단 캘린더 -->
+    <item type="id" name="slide_calendar"/>
+    <item type="id" name="current"/>
+    <item type="id" name="yoil"/>
+    <item type="id" name="calendar"/>
+    <item type="id" name="grid_week"/>
+    
+    <!-- 홈화면 -->
+    <item type="id" name="pager_container"/>
+    <item type="id" name="photo_container"/>
+    <item type="id" name="btn_add"/>
+    <item type="id" name="btn_stats"/>
+    <item type="id" name="btn_recorder"/>
+    <item type="id" name="btn_log"/>
+    
+    <!-- 정보입출력 공통 -->
+    <item type="id" name="txt_name_kor"/>
+    <item type="id" name="txt_name_eng"/>
+    <item type="id" name="txt_birthday"/>
+    <item type="id" name="txt_sex"/>
+    <item type="id" name="txt_hweight"/>
+    <item type="id" name="txt_height"/>
+    <item type="id" name="txt_weight"/>
+    <item type="id" name="txt_months"/>
+    <item type="id" name="edit_name_kor"/>
+    <item type="id" name="edit_name_eng"/>
+    <item type="id" name="edit_height"/>
+    <item type="id" name="edit_weight"/>
+    <item type="id" name="photo_view"/>
+    <item type="id" name="btn_select_birthday"/>
+    <item type="id" name="btn_next"/>
+    <item type="id" name="btn_prev"/>
+    <item type="id" name="btn_registration"/>
+    <item type="id" name="btn_modify"/>
+    <item type="id" name="btn_modify_comp"/>
+    <item type="id" name="radiogroup_sex"/>
+    <item type="id" name="radio_male"/>
+    <item type="id" name="radio_female"/>
+    
+    <!-- RecorderView -->
+    <item type="id" name="arc_timer"/>
+    <item type="id" name="img_icon"/>
+    <item type="id" name="txt_recorder_name"/>
+    <item type="id" name="frame_recorder"/>
+    
+    <!-- Recorder -->
+    <item type="id" name="recorder_diaper"/>
+    <item type="id" name="recorder_food"/>
+    <item type="id" name="recorder_sleep"/>
+    
+    
+</resources>

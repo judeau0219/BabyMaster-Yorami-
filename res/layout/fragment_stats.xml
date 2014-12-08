@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:gravity="center">
+        
+	    <Button android:id="@+id/btn_type"
+	        android:layout_width="0dip"
+	        android:layout_height="40dip"
+	        android:layout_weight="1"
+	        style="@style/spinner_type_bg"/>
+	    <Button android:id="@+id/btn_period"
+	        android:layout_width="0dip"
+	        android:layout_height="40dip"
+	        android:layout_marginLeft="5dip"
+	        android:layout_weight="1"
+	        style="@style/spinner_type_bg"/>
+    </LinearLayout>
+    
+    <!-- <include android:id="@+id/linear_chart" layout="@layout/log_chart"/> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:background="@color/log_chart_bg_color_02">
+        <TextView android:id="@+id/txt_total"
+            android:layout_width="140dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:text="총 사용량"
+        	android:background="@color/log_chart_bg_color_01"/>
+        <LinearLayout
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center">
+	        <ImageView android:id="@+id/icon_type_01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        <TextView android:id="@+id/txt_type_01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            android:gravity="center"
+	            android:textColor="#FFF"/>
+        </LinearLayout>
+        <LinearLayout
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center">
+	        <ImageView android:id="@+id/icon_type_02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        <TextView android:id="@+id/txt_type_02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            android:gravity="center"
+	            android:textColor="#FFF"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:id="@+id/txt_graph_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="30dip"
+        android:textColor="@color/basic_text_color"
+        android:textSize="18sp"
+        android:background="#FFF"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+		<LinearLayout android:id="@+id/linear_legend"
+		    android:layout_width="match_parent"
+		    android:layout_height="36dip"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="4dip"
+		    android:paddingLeft="30dip"
+		    android:paddingRight="16dip"
+		    android:gravity="center_vertical|right">
+		    <ImageView 
+		        android:layout_width="10dip"
+		        android:layout_height="10dip"
+		        android:src="@color/graph_fill_color_01"/>
+		    <TextView android:id="@+id/txt_legend01"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:gravity="center"
+		        android:textColor="#ff9e9e9e"
+        		android:textSize="16sp"/>
+		    <ImageView android:id="@+id/icon_02"
+		        android:layout_width="10dip"
+		        android:layout_height="10dip"
+		        android:layout_marginLeft="10dip"
+		        android:src="@color/graph_fill_color_02"/>
+		    <TextView android:id="@+id/txt_legend02"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:gravity="center"
+		        android:textColor="#ff9e9e9e"
+        		android:textSize="16sp"/>
+		</LinearLayout>
+	    <com.ndl.android.babymaster.view.GraphView 
+	        android:id="@+id/view_graph"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@id/linear_legend"/>
+    </RelativeLayout>
+
+</LinearLayout>

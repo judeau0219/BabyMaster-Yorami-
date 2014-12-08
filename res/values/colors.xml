@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_bg_color">#ffc1ece7</color>
+    <color name="drawer_menu_divider_color">#ffd5d5d5</color>
+    <color name="drawer_cover_color">#bb000000</color>
+    
+    <color name="title_bg_color_normal">#c1ece7</color>
+    <color name="title_bg_color_pressed">#dafefa</color>
+    
+    <color name="basic_text_color">#333333</color>
+    
+    <color name="graph_fill_color_01">#8881e0ec</color>
+    <color name="graph_fill_color_02">#88f9bf04</color>
+    
+    <drawable name="calendar_grid_normal">#c1ece7</drawable>
+    <drawable name="calendar_grid_pressed">#a6e5de</drawable>
+    
+    <color name="log_chart_bg_color_01">#b2b2b2</color>
+    <color name="log_chart_bg_color_02">#a3a3a3</color>
+    
+    <drawable name="btn_txt_date_normal">#ffffff</drawable>
+    <drawable name="btn_txt_date_pressed">#f0f0f0</drawable>
+    
+    <drawable name="record_list_item_bg_normal">#ffffff</drawable>
+    <drawable name="record_list_item_bg_pressed">#f4fffe</drawable>
+    
+    <drawable name="btn_record_registration_normal">#86d0cc</drawable>
+    <drawable name="btn_record_registration_pressed">#97deda</drawable>
+    
+</resources>

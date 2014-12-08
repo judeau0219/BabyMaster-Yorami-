@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ndl="http://schemas.android.com/apk/res/com.ndl.android.babymaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<LinearLayout android:id="@+id/linear_drawer"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	
+	    <include layout="@layout/main_top"/>
+	    
+	    <RelativeLayout android:id="@id/main_contents"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#FFF2F2F2">
+	        
+	        <FrameLayout android:id="@id/main_frame"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"/>
+	        
+	        <com.ndl.android.babymaster.viewgroup.SideDrawer
+	            android:id="@id/side_drawer"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            ndl:drawer_width="@dimen/drawer_width"
+	            ndl:from_left="true"
+	            ndl:cover_color="@color/drawer_cover_color"
+	            ndl:drawer_shadow="@drawable/drawer_shadow"/>
+	        
+	    </RelativeLayout>
+	
+	</LinearLayout>
+	
+	<com.ndl.android.babymaster.viewgroup.RecorderResult
+	    android:id="@id/record_result"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"/>
+
+</FrameLayout>

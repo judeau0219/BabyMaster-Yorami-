@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dip"
+    android:orientation="vertical" 
+    android:background="@color/log_chart_bg_color_01">
+    
+    <!-- 타이틀바 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="25dip">
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="기저귀"
+            style="@style/log_chart_title"
+            android:background="@android:color/transparent"/>
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="아기 식사"
+            style="@style/log_chart_title"/>
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="수면 시간"
+            style="@style/log_chart_title"/>
+    </LinearLayout>
+    
+    <!-- 내용 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/log_chart_bg_color_02">
+        
+        <!-- diaper -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_diaper_small"/>
+                <TextView android:id="@+id/txt_diaper_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_log_chart_04">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_diaper_big"/>
+                <TextView android:id="@+id/txt_diaper_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 모유, 이유식 -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_log_chart_02">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_breastfeeding"/>
+                <TextView android:id="@+id/txt_breastfeeding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_log_chart_03">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_babyfood"/>
+                <TextView android:id="@+id/txt_babyfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 분유, 우유 -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_drymilk"/>
+                <TextView android:id="@+id/txt_drymilk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_log_chart_04">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/ic_milk"/>
+                <TextView android:id="@+id/txt_milk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    style="@style/log_chart_contents"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 수면시간 -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_log_chart_03">
+            <TextView android:id="@+id/txt_sleep"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:singleLine="true"
+	             style="@style/log_chart_contents"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

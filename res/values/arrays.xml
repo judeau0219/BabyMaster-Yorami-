@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu">
+        <item>Home</item>
+        <item>녹음하기</item>
+        <item>베이비 로그</item>
+        <item>통계</item>
+        <item>아기 프로필</item>
+        <item>녹음 가이드</item>
+    </string-array>
+    
+    <string-array name="yoil">
+        <item>일</item>
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>토</item>
+    </string-array>
+    
+    <string-array name="camera_selector">
+        <item>사진 앨범</item>
+        <item>카메라</item>
+        <item>삭제</item>
+    </string-array>
+    
+    <string-array name="type_selector">
+        <item>기저귀(소변)</item>
+        <item>기저귀(대변)</item>
+        <item>모유(좌)</item>
+        <item>모유(우)</item>
+        <item>분유</item>
+        <item>우유</item>
+        <item>이유식</item>
+        <item>수면시간</item>
+    </string-array>
+    
+</resources>

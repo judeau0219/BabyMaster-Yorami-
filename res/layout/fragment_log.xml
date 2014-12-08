@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.ndl.android.babymaster.viewgroup.SlideCalendar
+		android:id="@id/slide_calendar"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+    
+    <LinearLayout android:id="@+id/linear_log" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF">
+        
+	    <include android:id="@+id/linear_chart" layout="@layout/log_chart"/>
+	    
+	    <ListView android:id="@+id/list_log"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="#e6e6e6"
+			android:dividerHeight="0.67dp"/>
+	    
+	    <TextView android:id="@+id/txt_empty"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dip"
+	        android:gravity="center"
+	        android:text="해당 날짜에 로그 기록이 존재하지 않습니다."
+	        android:textSize="18sp"
+	        android:textColor="#b2b2b2"
+	        android:visibility="gone"/>
+	    
+    </LinearLayout>
+    
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_bg_color">
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bears"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/registration_sex"
+        style="@style/txt_main_title"/>
+    
+    <RelativeLayout 
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip">
+	    <LinearLayout android:id="@+id/linear"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical">
+		    <RadioGroup android:id="@id/radiogroup_sex"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:checkedButton="@id/radio_male" >
+		        <RadioButton
+		            android:id="@id/radio_male"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="남자아이"
+		            style="@style/radio_sex"/>
+		        <RadioButton
+		            android:id="@id/radio_female"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:text="여자아이 "
+		            style="@style/radio_sex"/>
+		    </RadioGroup>
+	    </LinearLayout>
+	    
+	    <ImageView android:id="@id/btn_next" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip"
+	        android:layout_below="@id/linear"
+	        android:layout_alignParentRight="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/btn_registration_next"/>
+	    
+	    <ImageView android:id="@id/btn_prev" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip"
+	        android:layout_below="@id/linear"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/btn_registration_prev"/>
+	    
+	</RelativeLayout>
+	
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#AA000000">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="녹음한 내용을 골라주세요!"
+        android:singleLine="true"
+        android:textSize="26sp"
+        android:textColor="#FFF"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:singleLine="true"
+        android:text="정확한 녹음을 위해 녹음 가이드를 참고 부탁드립니다."
+        android:textSize="13sp"
+        android:textColor="#FFF"/>
+    
+    <RelativeLayout 
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip">
+	    <LinearLayout android:id="@+id/linear"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:dividerPadding="10dip"
+	        android:orientation="vertical">
+	        
+	        <!--
+	        	android:descendantFocusability="beforeDescendants"
+	        	뷰그룹과 뷰의 포커스 관계 정의
+	         -->
+	         
+	        <ListView android:id="@+id/list_result" 
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:listSelector="#00000000"
+				android:choiceMode="singleChoice"
+    			android:descendantFocusability="beforeDescendants"/>
+	        <!-- 
+		    <RadioGroup android:id="@id/radiogroup_result"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:checkedButton="@id/radio_result0" >
+		        <RadioButton
+		            android:id="@id/radio_result0"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="분유 220ml"
+		            style="@style/radio_sex"/>
+		        <RadioButton
+		            android:id="@id/radio_result1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:text="분유 230ml"
+		            style="@style/radio_sex"/>
+		        <RadioButton
+		            android:id="@id/radio_result2"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:text="분유 230ml"
+		            style="@style/radio_sex"/>
+		    </RadioGroup>
+		     -->
+	    </LinearLayout>
+	    
+	    <ImageView android:id="@id/btn_cancel" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:layout_below="@id/linear"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/btn_record_cancel"/>
+	    
+	    <ImageView android:id="@id/btn_confirm" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:layout_below="@id/linear"
+	        android:layout_alignParentRight="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/btn_record_confirm"/>
+	    
+	</RelativeLayout>
+
+</LinearLayout>

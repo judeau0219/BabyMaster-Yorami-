@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="DrawerAttrs">
+        <attr name="drawer_width" format="dimension"/> 
+        <attr name="cover_color" format="color"/>
+        <attr name="drawer_shadow" format="integer"/>
+        <attr name="from_left" format="boolean"/> 
+    </declare-styleable>
+    
+    <declare-styleable name="RecorderViewAttrs">
+        <attr name="recorder_icon" format="integer"/> 
+        <attr name="recorder_name" format="string"/>
+    </declare-styleable>
+    
+</resources>

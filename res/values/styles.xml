@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+    
+    <style name="txt_main_title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+    <style name="txt_basic">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+    <style name="txt_profile_name_kor">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+    <style name="txt_profile_name_eng">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#ff2b908b</item>
+    </style>
+    
+    <style name="txt_detail_info">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+    <style name="txt_input_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff6b9691</item>
+    </style>
+    
+    <style name="log_chart_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_log_chart_01</item>
+    </style>
+    
+    <style name="log_chart_contents">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="btn_input_complete">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_record_registration</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    
+    <style name="btn_datetime">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/btn_txt_date</item>
+    </style>
+    
+    <style name="spinner_type_bg">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">20sp</item>
+        <!-- <item name="android:background">@drawable/spinner_type_bg</item> -->
+        <item name="android:background">@drawable/bg_spinner_normal</item>
+    </style>
+    
+    <style name="edit_kor" parent="@style/txt_basic">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textColorHint">#d7d7d7</item>
+    </style>
+    
+    <style name="edit_number" parent="@style/edit_kor">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+    
+    <style name="edit_eng" parent="@style/edit_kor">
+        <item name="android:privateImeOptions">defaultInputmode=english</item>
+    </style>
+    
+    <style name="radio_sex" parent="@style/txt_basic">
+        <item name="android:background">@drawable/radio_background</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="radio_result" parent="@style/txt_basic">
+        <item name="android:background">@drawable/radio_result_background</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:checked">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+    
+    <!-- 녹음가이드 -->
+    <style name="txt_guide_title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+    <style name="txt_guide_sub_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/guide_contents_margin_left</item>
+    </style>
+    
+    <style name="txt_guide_contents">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/guide_contents_margin_left</item>
+    </style>
+    
+    <style name="txt_guide_ex">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff008777</item>
+        <item name="android:layout_marginLeft">@dimen/guide_contents_margin_left</item>
+    </style>
+    
+    <style name="txt_guide_num">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+    
+</resources>

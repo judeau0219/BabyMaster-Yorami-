@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ndl="http://schemas.android.com/apk/res/com.ndl.android.babymaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_bg_color">
+    
+    <com.ndl.android.babymaster.view.RecorderView
+        android:id="@id/recorder_diaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ndl:recorder_icon="@drawable/ic_recorder_diaper"
+        ndl:recorder_name="기저귀"/>
+    <com.ndl.android.babymaster.view.RecorderView
+        android:id="@id/recorder_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/recorder_space"
+        ndl:recorder_icon="@drawable/ic_recorder_milk"
+        ndl:recorder_name="아기 식사"/>
+    <com.ndl.android.babymaster.view.RecorderView
+        android:id="@id/recorder_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/recorder_space"
+        ndl:recorder_icon="@drawable/ic_recorder_sleep"
+        ndl:recorder_name="수면 시간"/>
+
+</LinearLayout>

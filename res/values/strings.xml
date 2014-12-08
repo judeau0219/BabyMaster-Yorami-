@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">요람이</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="registration_birthday">아기 생년월일은 언제인가요?</string>
+    <string name="registration_sex">아기 성별은 무엇인가요?</string>
+    <string name="registration_name">아기 이름을 등록해 주세요.</string>
+    <string name="registration_ruler">아기 키/몸무게를 입력해 주세요.</string>
+    <string name="guide_registration_date">YYYY년 MM월 DD일</string>
+    <string name="title_activity_select">SelectActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+
+    <!-- 로그입력 -->
+    <string name="input_guide_diaper_small">예) 노란색..</string>
+    <string name="input_guide_diaper_big">예) 설사, 묽은똥..</string>
+    <string name="input_guide_babyfood">예) 바나나 한개..</string>
+    <string name="input_guide_milk">예) 220, 250..</string>
+    
+    <string name="guide_btn_elapsed">00시간 00분</string>
+    <string name="toast_add_record_milk">용량을 기입해 주세요.</string>
+    <string name="toast_add_record_elapsed">경과 시간을 입력해 주세요.</string>
+    
+    <string name="input_title_diaper">메모</string>
+    <string name="input_title_breastfeeding">모유 수유 시간</string>
+    <string name="input_title_milk">용량(ml)</string>
+    <string name="input_title_babyfood">종류</string>
+    <string name="input_title_sleep">수면 시간</string>
+    
+    <string name="toast_recorder_error">결과값이 유효하지 않습니다.\n녹음 가이드를 참고하여 다시 실행해 주세요.</string>
+    
+    <!-- 녹음가이드 -->
+    <string name="guide_order_title">녹음방법</string>
+    <string name="guide_order_contents_01">기저귀, 아기식사, 수면시간 중에서 기록하고자 하는\n내용에 해당하는 버튼을 누른 상태로 녹음을 진행합니다.</string>
+    <!-- <string name="guide_order_contents_02">버튼을 누른 상태에서 타임바가 완료되기 전까지 녹음을 진행합니다.</string> -->
+    <string name="guide_order_contents_03">버튼에서 손을 떼거나 타임바가 완료되면 녹음이\n종료되고 녹음 결과 값이 노출됩니다.</string>
+    <string name="guide_order_contents_04">결과 값이 맞는지 확인하고 원하는 결과 값을 선택 후\n기록하기 버튼을 클릭하면 오늘 날짜로 로그에 기록이 됩니다.</string>
+    
+    <!-- 유의사항 -->
+    <string name="guide_caution_title">유의사항</string>
+    <string name="guide_caution_contents_01">녹음하기는 네트워크 연결이 되어 있는 상태에서 이용이 가능합니다.</string>
+    <!-- <string name="guide_caution_contents_02">녹음 시작 시에는 디바이스 내에 플레이 되고 있던 모든 사운드는 음소거 상태가 됩니다.</string> -->
+    <string name="guide_caution_contents_03">정확한 녹음을 위해 주변의 소음이 없는 곳에서 이용해 주세요.</string>
+    <string name="guide_caution_contents_04">녹음 시에는 아래의 분류 별 녹음 패턴을 참고하여 녹음해 주시기 바랍니다.</string>
+    
+    <!-- 녹음 패턴 가이드 -->
+    <string name="guide_pattern_title">녹음 패턴 가이드</string>
+    
+    <string name="guide_pattern_sub_title_01">기저귀(소변)</string>
+    <string name="guide_pattern_contents_01">분류명-기타정보 순으로 녹음해 주세요.\n기타정보는 정해진 패턴없으므로 아무 말이나 녹음해\n주셔도 되며, 생략 가능합니다.</string>
+    <string name="guide_pattern_ex_01">예) 소변-묽은색, 오줌-묽은색, 소변, 오줌..</string>
+    
+    <string name="guide_pattern_sub_title_02">기저귀(대변)</string>
+    <string name="guide_pattern_contents_02">분류명-기타정보 순으로 녹음해 주세요.\n기타정보는 정해진 패턴없으므로 아무 말이나 녹음해\n주셔도 되며, 생략 가능합니다.</string>
+    <string name="guide_pattern_ex_02">예) 대변-설사, 똥-설사, 대변, 똥..</string>
+    
+    <string name="guide_pattern_sub_title_03">모유</string>
+    <string name="guide_pattern_contents_03">분류명-소요시간 순으로 녹음해 주세요.\n결과값에 좌측, 우측 선택이 가능하도록 목록이 2개 이상이 노출됩니다.</string>
+    <string name="guide_pattern_ex_03">예) 모유 한 시간 반, 모유 두시간, 모유 삼십오분..</string>
+    
+    <string name="guide_pattern_sub_title_04">분유, 우유</string>
+    <string name="guide_pattern_contents_04">분류명-ml단위숫자 순으로 녹음해 주세요.</string>
+    <string name="guide_pattern_ex_04">예) 분유 이백이십, 우유 삼백오십, 분유 사백..</string>
+    
+    <string name="guide_pattern_sub_title_05">이유식</string>
+    <string name="guide_pattern_contents_05">분류명-내용 순으로 녹음해 주세요.</string>
+    <string name="guide_pattern_ex_05">예) 이유식 바나나 한 개, 이유식 죽 반그릇..</string>
+    
+    <string name="guide_pattern_sub_title_06">수면시간</string>
+    <string name="guide_pattern_contents_06">분류명-수면시간 순으로 녹음해 주세요.</string>
+    <string name="guide_pattern_ex_06">예) 수면 세시간 반, 네 시간 반, 다섯시간..</string>
+</resources>

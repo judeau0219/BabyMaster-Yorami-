@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <com.ndl.android.babymaster.viewgroup.CalendarContainer 
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_week"/>
+    
+    <GridView
+        android:id="@id/grid_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:listSelector="#0000"
+        android:stretchMode="columnWidth"
+        android:numColumns="7"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_bg_color"/>
+    
+</RelativeLayout>
